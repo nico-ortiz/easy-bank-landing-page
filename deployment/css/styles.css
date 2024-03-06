@@ -1,0 +1,41 @@
+body {
+    margin: 0 100px;
+}
+
+.header {
+    padding: 30px 100px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    background-color: var(--white);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar > ul {
+    width: 300px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar > ul > li {
+    list-style: none;
+    font-size: .8rem;
+    font-weight: 200;
+    color: var(--dark-blue);
+    margin: 0 10px;
+}
+
+.header .btn {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(90deg, var(--lime-green), var(--bright-cyan));
+    
+    color: var(--white);
+    font-weight: 600;
+}
+
