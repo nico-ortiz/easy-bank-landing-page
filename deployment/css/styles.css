@@ -137,7 +137,7 @@ main {
     position: relative;
     z-index: 3;
     width: 100%;
-    padding: 80px 140px;
+    padding: 80px 100px;
     top: -80px;
 
     background-color: var(--light-grayish-blue);
@@ -178,4 +178,66 @@ main {
     font-size: .89rem;
     font-weight: 300;
     line-height: 25px;
+}
+
+#blog-section {
+    padding: 80px 80px 100px 100px;
+    position: relative;
+    top: -80px;
+
+    background-color: var(--very-light-gray);
+    color: var(--dark-blue);
+}
+
+#blog-section > h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#blog-section .blog-card-container {
+    margin-top: 50px;
+
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+#blog-section .blog-card-container > article {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-auto-rows: 1fr;
+    border-radius: 5px;
+    background-color: var(--white);
+}
+
+#blog-section .blog-card-container > article > img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+#blog-section .blog-card-container > article .text-container {
+    padding: 25px;
+}
+
+#blog-section .blog-card-container > article .text-container .author {
+    font-size: .6rem;
+    margin-bottom: 20px;
+}
+
+#blog-section .blog-card-container > article .text-container .title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#blog-section .blog-card-container > article .text-container .description {
+    font-size: .7rem;
+    font-weight: 200;
+}
+
+#blog-section .blog-card-container > article .text-container .title:hover {
+    color: var(--bright-cyan);
+    cursor: pointer;
 }
