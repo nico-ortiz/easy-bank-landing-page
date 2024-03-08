@@ -6,7 +6,7 @@
     top: 0;
     left: 0;
     background-color: var(--white);
-    z-index: 3;
+    z-index: 4;
 
     display: flex;
     justify-content: space-between;
@@ -73,10 +73,11 @@ main {
 #home-section {
     background-color: var(--very-light-gray);
     box-sizing: border-box;
-    position: absolute;
-    z-index: 0;
+    position: relative;
+    z-index: 1;
     width: 100%;
     overflow-y: hidden;
+    height: 650px;
 
     padding-left: 100px;
     
@@ -113,20 +114,68 @@ main {
 }
 
 #home-section .img-container .phones-img {
-    position: relative;
+    position: absolute;
+    z-index: 4;
     top: -95px;
-    right: -130px;
+    right: -100px;
 
-    max-width: 600px;
+    max-width: 650px;
     width: 100%;
 }
 
 #home-section .img-container .bg-img {
     position: absolute;
     top: -220px;
-    right: -280px;
-    z-index: -1;
+    right: -300px;
+    z-index: 2;
 
-    width: 1000px;
+    width: 1050px;
     max-width: 100%;
+}
+
+#about-section {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    padding: 80px 140px;
+    top: -80px;
+
+    background-color: var(--light-grayish-blue);
+    color: var(--dark-blue);
+}
+
+
+#about-section > h3 {
+    font-size: 2rem;
+    font-weight: 400;
+
+    margin-bottom: 30px;
+}
+
+#about-section > p {
+    margin-top: 5px;
+}
+
+#about-section .cards-container {
+    margin-top: 80px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+
+#about-section .articles > img {
+    margin-bottom: 30px;
+}
+
+#about-section .articles > h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#about-section .articles > p {
+    font-size: .89rem;
+    font-weight: 300;
+    line-height: 25px;
 }
