@@ -181,7 +181,7 @@ main {
 }
 
 #blog-section {
-    padding: 80px 80px 100px 100px;
+    padding: 80px 100px;
     position: relative;
     top: -80px;
 
@@ -240,4 +240,34 @@ main {
 #blog-section .blog-card-container > article .text-container .title:hover {
     color: var(--bright-cyan);
     cursor: pointer;
+}
+
+#footer {
+    background-color: var(--dark-blue);
+    padding: 40px 100px;
+    position: sticky;
+    bottom: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color: white;
+}
+
+#footer .social-media-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#logo-white path{
+    fill: white;
+}
+
+#footer .social-media-section .social-media-icon-subs > img {
+    margin-left: 10px;
+}
+
+#footer .social-media-section .social-media-icon-subs > img:hover {
+    cursor: pointer;
+    color: var(--lime-green);
 }
