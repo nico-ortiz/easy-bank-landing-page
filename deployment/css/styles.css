@@ -55,7 +55,7 @@
     border-bottom-color: var(--gradient);
 }
 
-.header .btn {
+.btn {
     padding: 10px 30px;
     border-radius: 20px;
     border: none;
@@ -244,7 +244,7 @@ main {
 
 #footer {
     background-color: var(--dark-blue);
-    padding: 40px 100px;
+    padding: 60px 100px;
     position: sticky;
     bottom: 0;
 
@@ -259,15 +259,73 @@ main {
     justify-content: space-between;
 }
 
-#logo-white path{
-    fill: white;
+#footer .social-media-section #logo-white {   
+    width: 50%;
 }
 
-#footer .social-media-section .social-media-icon-subs > img {
+#footer .social-media-section .social-media-icon-subs > svg {
     margin-left: 10px;
 }
 
-#footer .social-media-section .social-media-icon-subs > img:hover {
+.frame:hover {
+    fill: var(--lime-green);
     cursor: pointer;
+    transition: .2s ease-in ;
+}
+
+#footer .links > ul {
+    display: grid;
+    grid-template-areas: 
+        "one two"
+        "three four"
+        "five six";
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+#footer .links > ul > li {
+    margin-bottom: 10px;
+    font-size: .9rem;
+    align-self:self-end;
+}
+
+#footer .links > ul > li:nth-child(1) {
+    grid-area: one;
+}
+
+#footer .links > ul > li:nth-child(2) {
+    grid-area: two;
+}
+
+#footer .links > ul > li:nth-child(3) {
+    grid-area: three;
+}
+
+#footer .links > ul > li:nth-child(4) {
+    grid-area: four;
+}
+
+#footer .links > ul > li:nth-child(5) {
+    grid-area: five;
+}
+
+#footer .links > ul > li:nth-child(6) {
+    grid-area: six;
+}
+
+#footer .links > ul > li:hover {
     color: var(--lime-green);
+    cursor: pointer;
+}
+
+#footer .terms-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#footer .terms-section > p {
+    font-size: .8rem;
+    color: var(--grayish-blue);
 }
