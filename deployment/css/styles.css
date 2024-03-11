@@ -74,10 +74,10 @@ main {
     background-color: var(--very-light-gray);
     box-sizing: border-box;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     overflow-y: hidden;
-    height: 650px;
+    height: 550px;
 
     padding-left: 100px;
     
@@ -113,6 +113,20 @@ main {
     cursor: pointer;
 }
 
+/*#home-section .img-container::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    background: url("/images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 10px -145px;
+    background-size: 100% 100%;
+    z-index: -1;
+}*/
+
 #home-section .img-container .phones-img {
     position: absolute;
     z-index: 4;
@@ -135,9 +149,9 @@ main {
 
 #about-section {
     position: relative;
-    z-index: 3;
+    z-index: 1;
     width: 100%;
-    padding: 80px 100px;
+    padding: 120px 100px 80px 100px;
     top: -80px;
 
     background-color: var(--light-grayish-blue);
