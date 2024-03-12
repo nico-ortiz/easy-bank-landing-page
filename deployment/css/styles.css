@@ -66,18 +66,23 @@
     cursor: pointer;
 }
 
+.btn:hover {
+    cursor: pointer;
+    background: var(--gradient-light);
+}
+
 main {
     margin-top: 80px;
+    background-color: var(--light-grayish-blue);
 }
 
 #home-section {
     background-color: var(--very-light-gray);
     box-sizing: border-box;
     position: relative;
-    z-index: 2;
     width: 100%;
     overflow-y: hidden;
-    height: 550px;
+    height: 680px;
 
     padding-left: 100px;
     
@@ -113,25 +118,11 @@ main {
     cursor: pointer;
 }
 
-/*#home-section .img-container::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100px;
-    max-height: 100px;
-    background: url("/images/bg-intro-mobile.svg");
-    background-repeat: no-repeat;
-    background-position: 10px -145px;
-    background-size: 100% 100%;
-    z-index: -1;
-}*/
-
 #home-section .img-container .phones-img {
     position: absolute;
-    z-index: 4;
     top: -95px;
     right: -100px;
+    z-index: 1;
 
     max-width: 650px;
     width: 100%;
@@ -141,7 +132,7 @@ main {
     position: absolute;
     top: -220px;
     right: -300px;
-    z-index: 2;
+    z-index: 0;
 
     width: 1050px;
     max-width: 100%;
@@ -149,10 +140,9 @@ main {
 
 #about-section {
     position: relative;
-    z-index: 1;
     width: 100%;
-    padding: 120px 100px 80px 100px;
-    top: -80px;
+    padding: 80px 100px 0px 100px;
+    top: -110px;
 
     background-color: var(--light-grayish-blue);
     color: var(--dark-blue);
@@ -197,7 +187,7 @@ main {
 #blog-section {
     padding: 80px 100px;
     position: relative;
-    top: -80px;
+    top: -5px;
 
     background-color: var(--very-light-gray);
     color: var(--dark-blue);
@@ -277,22 +267,28 @@ main {
     width: 50%;
 }
 
-#footer .social-media-section .social-media-icon-subs > svg {
-    margin-left: 10px;
+#footer .social-media-section .social-media-icon-subs {
+    display: flex;
+}
+
+#footer .social-media-section .social-media-icon-subs .links-container {
+    margin-right: 15px;
+}
+
+#footer .social-media-section .social-media-icon-subs .links-container:hover {
+    cursor: pointer;
 }
 
 .frame:hover {
     fill: var(--lime-green);
-    cursor: pointer;
-    transition: .2s ease-in ;
 }
 
 #footer .links > ul {
     display: grid;
     grid-template-areas: 
-        "one two"
-        "three four"
-        "five six";
+        "one four"
+        "two five"
+        "three six";
     justify-content: space-evenly;
     gap: 10px;
 }

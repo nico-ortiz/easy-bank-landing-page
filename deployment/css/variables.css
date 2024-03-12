@@ -12,6 +12,7 @@
 
     /* Gradient */
     --gradient: linear-gradient(90deg, var(--lime-green), var(--bright-cyan));
+    --gradient-light: linear-gradient(90deg, hsl(136, 48%, 68%), hsl(192, 51%, 65%));
 }
 
 * {
