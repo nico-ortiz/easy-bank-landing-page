@@ -118,6 +118,10 @@ main {
     cursor: pointer;
 }
 
+#home-section .text-container > button:hover {
+    background: var(--gradient-light);
+}
+
 #home-section .img-container .phones-img {
     position: absolute;
     top: -95px;
@@ -294,7 +298,6 @@ main {
 }
 
 #footer .links > ul > li {
-    margin-bottom: 10px;
     font-size: .9rem;
     align-self:self-end;
 }
@@ -338,4 +341,25 @@ main {
 #footer .terms-section > p {
     font-size: .8rem;
     color: var(--grayish-blue);
+}
+
+@media only screen and (width = 1024px) {
+    #home-section .img-container .phones-img {
+        top: -85px;
+        right: -95px;
+        max-width: 525px;
+    }
+
+    #home-section .img-container .bg-img {
+        right: -420px;
+        width: 975px;
+    }
+
+    #about-section {
+        top: -205px;
+    }
+
+    #footer .terms-section > p {
+        font-size: .7rem;
+    }
 }
