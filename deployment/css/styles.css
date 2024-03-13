@@ -363,3 +363,103 @@ main {
         font-size: .7rem;
     }
 }
+
+@media only screen and (width < 1024px) {
+    .header {
+        padding: 0 50px;
+    }
+
+    .navbar > ul > li {
+        width: 50px;
+    }
+
+    .navbar > ul > li > a {
+        font-size: .7rem;
+        justify-content: space-around;
+    }
+
+    #home-section {
+        padding-left: 50px;
+        height: 500px;
+    }
+
+    #home-section .text-container > h1 {
+        font-size: 2rem;
+    }
+    
+    #home-section .text-container {
+        padding-top: 40px;
+    }
+
+    #home-section .img-container .phones-img {
+        top: -70px;
+        right: -80px;
+        max-width: 450px;
+    }
+
+    #home-section .img-container .bg-img {
+        top: -155px;
+    }
+
+    #about-section {
+        padding: 80px 50px 0px 50px;
+    }
+
+    #about-section .cards-container {
+        margin-top: 50px;
+    }
+
+    #about-section .articles > img, #about-section .articles > h4 {
+        margin-bottom: 15px;
+    }
+
+    #blog-section {
+        padding: 40px 50px;
+    }
+
+    #blog-section .blog-card-container {
+        column-gap: 15px;
+    }
+
+    #blog-section .blog-card-container > article {
+        grid-template-rows: 120px 1fr;
+    }
+
+    #blog-section .blog-card-container > article .text-container {
+        padding: 10px;
+    }
+
+    #blog-section .blog-card-container > article .text-container .title {
+        font-size: .9rem;
+    }
+
+    #blog-section .blog-card-container > article .text-container .description {
+        font-size: .6rem;
+    }
+
+    #footer {
+        padding: 30px 50px;
+    }
+
+    #footer .social-media-section #logo-white {
+        width: 70%;
+    }
+
+    #footer .social-media-section .social-media-icon-subs .links-container {
+        margin-right: 7px;
+        width: 70%;
+    }
+
+    #footer .links > ul > li {
+        font-size: .7rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: .7rem;
+    }
+
+    #footer .terms-section > p {
+        font-size: .6rem;
+    }
+}
