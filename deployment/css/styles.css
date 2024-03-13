@@ -71,6 +71,10 @@
     background: var(--gradient-light);
 }
 
+.header .icon-hamburger {
+    display: none;
+}
+
 main {
     margin-top: 80px;
     background-color: var(--light-grayish-blue);
@@ -140,6 +144,10 @@ main {
 
     width: 1050px;
     max-width: 100%;
+}
+
+#home-section .img-container .bg-img-mb {
+    display: none;
 }
 
 #about-section {
@@ -461,5 +469,61 @@ main {
 
     #footer .terms-section > p {
         font-size: .6rem;
+    }
+}
+
+@media only screen and (width < 768px){
+    .header {
+        padding: 10px 25px;
+    }
+
+    .header .navbar, .header .btn {
+        display: none;
+    }
+
+    .header .icon-hamburger {
+        display: block;
+    }
+
+    #home-section {
+        padding: 0px 25px;
+        grid-template-columns: none;
+        grid-template-rows:  1fr 200px;
+        height: 675px;
+    }
+
+    #home-section .img-container .phones-img {
+        top: -142px;
+        right: 10px;
+        max-width: 400px;
+    }
+
+    #home-section .img-container .bg-img {
+        display: none;
+    }
+
+    #home-section .img-container .bg-img-mb {
+        display: block;
+        position: absolute;
+        top: -75px;
+        right: 0px;
+        width: 430px;
+    }
+
+    #home-section .text-container {
+        position: relative;
+        top: 350px;
+        text-align: center;
+    }
+
+    #home-section .text-container > p {
+        font-size: .8rem;
+        color: var(--grayish-blue);
+
+    }
+
+    #about-section {
+        padding: 20px 10px;
+        top: 100px;
     }
 }
