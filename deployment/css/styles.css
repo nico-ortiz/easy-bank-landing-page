@@ -71,7 +71,7 @@
     background: var(--gradient-light);
 }
 
-.header .icon-hamburger {
+.header .icon-hamburger, .header .icon-close, .header .header-mobile {
     display: none;
 }
 
@@ -630,5 +630,21 @@ main {
     #footer .terms-section {
         align-items: center;
         justify-content: space-evenly;
+    }
+
+    /* ADD MANIPULATION JS*/
+    .header.close .icon-hamburger {
+        display: none;
+    }
+
+    .header.close .icon-close {
+        display: block;
+    }
+
+    .header.close .header-mobile {
+        display: block;
+        position: fixed;
+        top: 100px;
+        z-index: 1;
     }
 }
