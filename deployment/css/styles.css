@@ -709,7 +709,7 @@ main {
     }
 }
 
-@media only screen and (width <= 325px) {
+@media only screen and (width <= 320px) {
     #home-section .img-container .phones-img {
         right: 0px;
         top: -35px;
