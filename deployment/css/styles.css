@@ -697,16 +697,16 @@ main {
     }
 }
 
-@media only screen and (width = 375px) {
-    #home-section .img-container .phones-img { 
+/*@media only screen and (width < 425px) and (width > 375px) {
+    #home-section .img-container .phones-img {
         right: 0px;
     }
-}
+}*/
 
-@media only screen and (width < 375px) {
+@media only screen and (width <= 375px) {
     #home-section .img-container .phones-img {
         top: -124px;
-        right: 0px;
+        right: 15px;
         max-width: 350px;
     }
 
@@ -715,17 +715,21 @@ main {
     }
 }
 
-/*@media only screen and (width <= 320px) {
+@media only screen and (width <= 320px) {
     #home-section .img-container .phones-img {
         right: 0px;
-        top: -35px;
+        top: -115px;
+    }
+
+    #home-section .img-container .bg-img-mb {
+        top: -135px;
     }
 
     #home-section .text-container {
-        top: 330px;
+        top: 280px;
     }
 
     #about-section > h3 {
         width: 70%;
     }
-}*/
+}
