@@ -715,6 +715,20 @@ main {
     }
 }
 
+@media only screen and ((width < 375px) and (width > 320px)) {
+    #home-section .img-container .phones-img {
+        right: 0px;
+    }
+
+    #home-section .img-container .bg-img-mb {
+        top: -145px;
+    }
+
+    #home-section .text-container {
+        top: 250px;
+    }
+}
+
 @media only screen and (width <= 320px) {
     #home-section .img-container .phones-img {
         right: 0px;
